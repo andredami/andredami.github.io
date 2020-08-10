@@ -1,3 +1,13 @@
+html {
+    font-size: 120%;
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 180%;
+    }
+}
+
 body {
     background-image: url(images/bg-mountain.JPG);
     background-position: center;
@@ -15,16 +25,84 @@ body {
 }
 
 p {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-family: monospace;
-    font-size: xx-large;
-    line-height: 150%;
+    font-family: 'Spartan';
 }
 
-a {
-    color: aqua;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+.content {
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: scroll;
+}
+
+.signature {
+    font-family: 'Handlee';
+    font-size: larger;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+#businessCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 24pt;
+    padding: 12pt;
+    backdrop-filter: blur(12px) brightness(150%);
+    -webkit-backdrop-filter: blur(12px) brightness(150%) ;
+}
+
+@media screen and (max-width: 576px) {
+    #businessCard {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+#myself {
+    max-height: 6em;
+    margin: 12px;
+    border-radius: 50%;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12px;
 }
