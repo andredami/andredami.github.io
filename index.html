@@ -9,6 +9,26 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cedarville%20Cursive">
         <script src="https://kit.fontawesome.com/92959cd728.js" crossorigin="anonymous"></script>
+        <script language="JavaScript">
+            window.addEventListener("load", function() {
+                mcntph = document.getElementById('mcntph');
+
+                user = 'me';
+                site = 'andrea-damiani.eu';
+                iterations = 3/* s */ * 2/* iteration/s */;
+
+                interval = setInterval(function() {
+                    iterations -= 1;
+                    if (iterations > 0) {
+
+                    } else {
+                        mcntph.innerHTML = '';
+                        mcntph.innerHTML += '<a href=\"mailto:' + user + '@' + site + '\">' + user + '@' + site + '</a>';
+                        clearInterval(interval);
+                    }
+                }, 500);
+            });
+        </script>
     </head>
     <body>
         <div class="content">
@@ -19,7 +39,7 @@
                     <h1 class="name">Andrea <span class="signature">Damiani</span></h1>
                     <p class="subtitle">Engineer, Director, Developer, Hiker</p>
                     <div id="contact">
-                        <p><i class="fa fa-envelope icon"></i><a href="mailto:me@andrea-damiani.eu">me@andrea-damiani.eu</a></p>
+                        <p><i class="fa fa-envelope icon"></i><span class="ph" id="mcntph">&hellip;</span></p>
                         <p><i class="fab fa-linkedin icon"></i><a href="https://www.linkedin.com/in/andreadamiani" target="_blank">Me on LinkedIn</a></p>
                     </div>
                 </div>
