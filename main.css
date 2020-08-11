@@ -1,10 +1,10 @@
 html {
-    font-size: 18px;
+    font-size: 48px;
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
     html {
-        font-size: 30px;
+        font-size: 18px;
     }
 }
 
@@ -69,15 +69,16 @@ h6 {
     background-color: #00B7C2;
     position: fixed;
     top: 65vh;
+    z-index: -1;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     #content {
-        top: 85vh;
+        top: 90vh;
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     #content {
         margin-top: 0;
     }
@@ -107,13 +108,13 @@ h6 {
     padding: 0.666666666666rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     #businessCard {
         margin: 0.666666666666rem;
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     #businessCard {
         margin-left: 0;
         margin-right: 0;
@@ -126,7 +127,7 @@ h6 {
     border-radius: 50%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     #myself {
         max-height: 6.666666666666rem;
         margin: 0.666666666666rem;
@@ -154,7 +155,7 @@ h6 {
     margin-top: 0.333333333333rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     #contact {
         margin-top: 1.5rem;
     }
@@ -168,7 +169,7 @@ h6 {
     color: #00B7C2;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     #contact .icon {
         margin-right: 0;
     }
