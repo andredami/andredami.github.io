@@ -2,7 +2,18 @@ html {
     font-size: 48px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen
+    and (orientation: landscape)
+    and (max-width: 992px) 
+{
+    html {
+        font-size: 24px;
+    }
+}
+
+@media only screen 
+    and (min-width: 992px) 
+{
     html {
         font-size: 18px;
     }
