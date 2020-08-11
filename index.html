@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Andrea Damiani</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-reboot.min.css" integrity="sha384-tXZXZ8/9fzWBr4+NpIqlYP6f79bCNrZjTqcnHs3NrSTS6AEv1SJYS/S14BwGl0X9" crossorigin="anonymous">
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="main.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cedarville%20Cursive">
-        <script src="https://kit.fontawesome.com/92959cd728.js" crossorigin="anonymous"></script>
-        <script language="JavaScript">
-            window.addEventListener("load", function() {
-                var mcntph = document.getElementById('mcntph');
-                var ellip = mcntph.getElementsByClassName('ellip');
 
-                var user = 'me';
-                var site = 'andrea-damiani.eu';
-                var iterations = 3/* s */ * 2/* iteration/s */;
-                var counter = -1;
-                
-                var interval = setInterval(function() {
-                    counter += 1;
-                    if (counter < iterations) {
-                        for (i = 0; i < ellip.length; i++) {
-                            if (i === counter % ellip.length) {
-                                ellip[i].setAttribute('class', 'ellip far fa-dot-circle');
-                            } else {
-                                ellip[i].setAttribute('class', 'ellip far fa-circle');
-                            }
+<head>
+    <title>Andrea Damiani</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-reboot.min.css"
+        integrity="sha384-tXZXZ8/9fzWBr4+NpIqlYP6f79bCNrZjTqcnHs3NrSTS6AEv1SJYS/S14BwGl0X9" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cedarville%20Cursive">
+    <script src="https://kit.fontawesome.com/92959cd728.js" crossorigin="anonymous"></script>
+    <script language="JavaScript">
+        window.addEventListener("load", function () {
+            var mcntph = document.getElementById('mcntph');
+            var ellip = mcntph.getElementsByClassName('ellip');
+
+            var user = 'me';
+            var site = 'andrea-damiani.eu';
+            var iterations = 3/* s */ * 2/* iteration/s */;
+            var counter = -1;
+
+            var interval = setInterval(function () {
+                counter += 1;
+                if (counter < iterations) {
+                    for (i = 0; i < ellip.length; i++) {
+                        if (i === counter % ellip.length) {
+                            ellip[i].setAttribute('class', 'ellip far fa-dot-circle');
+                        } else {
+                            ellip[i].setAttribute('class', 'ellip far fa-circle');
                         }
-                    } else {
-                        mcntph.innerHTML = '';
-                        mcntph.innerHTML += '<a href=\"mailto:' + user + '@' + site + '\">' + user + '@' + site + '</a>';
-                        clearInterval(interval);
                     }
-                }, 500);
-            });
-        </script>
-    </head>
-    <body>
-        <div id="businessCard">
-            <img id="myself" src="images/andrea-damiani.jpg" alt="Andrea Damiani - Personal Picure" />
-            <div id="infos">
-                <p>Hey, this is me&hellip;</p>
-                <h1 class="name">Andrea <span class="signature">Damiani</span></h1>
-                <p class="subtitle">Engineer, Director, Developer, Hiker</p>
-                <div id="contact">
-                    <p><i class="fa fa-envelope icon"></i><span id="mcntph"> <i class="ellip far fa-circle"></i> <i class="ellip far fa-circle"></i> <i class="ellip far fa-circle"></i></span></p>
-                    <p><i class="fab fa-linkedin icon"></i><a href="https://www.linkedin.com/in/andreadamiani" target="_blank">Me on LinkedIn</a></p>
-                </div>
+                } else {
+                    mcntph.innerHTML = '';
+                    mcntph.innerHTML += '<a href=\"mailto:' + user + '@' + site + '\">' + user + '@' + site + '</a>';
+                    clearInterval(interval);
+                }
+            }, 500);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="businessCard">
+        <img id="myself" src="images/andrea-damiani.jpg" alt="Andrea Damiani - Personal Picure" />
+        <div id="infos">
+            <p>Hey, this is me&hellip;</p>
+            <h1 class="name">Andrea <span class="signature">Damiani</span></h1>
+            <p class="subtitle">Engineer, Director, Developer, Hiker</p>
+            <div id="contact">
+                <p><i class="fa fa-envelope icon"></i><span id="mcntph"> <i class="ellip far fa-circle"></i> <i
+                            class="ellip far fa-circle"></i> <i class="ellip far fa-circle"></i></span></p>
+                <p><i class="fab fa-linkedin icon"></i><a href="https://www.linkedin.com/in/andreadamiani"
+                        target="_blank">Me on LinkedIn</a></p>
             </div>
         </div>
-        <div id="content">
-        </div>
-    </body>
+    </div>
+    <div id="content">
+    </div>
+</body>
+
 </html>
