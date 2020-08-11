@@ -139,6 +139,10 @@ h6 {
     margin-top: 3rem;
 }
 
+#contact p {
+    margin-top: 0.333333333333rem;
+}
+
 @media screen and (max-width: 576px) {
     #contact {
         margin-top: 1.5rem;
@@ -146,7 +150,15 @@ h6 {
 }
 
 #contact .icon {
-    width: 1.5rem;
+    font-size: 1.333333333333rem;
+    width: 1.666666666666rem;
+    margin-right: 1rem;
     text-align: center;
     color: #00B7C2;
+}
+
+@media screen and (max-width: 576px) {
+    #contact .icon {
+        margin-right: 0;
+    }
 }
