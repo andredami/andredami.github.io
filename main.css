@@ -2,7 +2,7 @@ html {
     font-size: 18px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
     html {
         font-size: 30px;
     }
@@ -19,6 +19,19 @@ body {
     min-height: 100vh;
     max-height: 100vh;
     overflow: hidden;
+}
+
+a, a:visited{
+    color: #FDCB9E;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #00B7C2;
+}
+
+p {
+    margin: 0.333333333333rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -67,7 +80,6 @@ h6 {
 .name {
     color: #00B7C2;
     margin-top: 1rem;
-    margin-bottom: 0.333333333333rem;
 }
 
 .subtitle {
@@ -86,6 +98,12 @@ h6 {
 
 @media screen and (max-width: 576px) {
     #businessCard {
+        margin: 0.666666666666rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #businessCard {
         margin-left: 0;
         margin-right: 0;
     }
@@ -97,9 +115,38 @@ h6 {
     border-radius: 50%;
 }
 
-#title {
+@media screen and (max-width: 576px) {
+    #myself {
+        max-height: 6.666666666666rem;
+        margin: 0.666666666666rem;
+    }
+}
+
+#infos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 1.333333333333rem;
+}
+
+@media screen and (max-width: 576px) {
+    #infos {
+        margin: 0.666666666666rem;
+    }
+}
+
+#contact {
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 576px) {
+    #contact {
+        margin-top: 1.5rem;
+    }
+}
+
+#contact .icon {
+    width: 1.5rem;
+    text-align: center;
+    color: #00B7C2;
 }
